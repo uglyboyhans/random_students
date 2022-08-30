@@ -1,5 +1,3 @@
-
-// 你要抽男生还是女生？在下面填 girl or boy or any，填 any 就不限定性别
 var pick_gender = "any"
 
 // 你要cue的人，填了就是天选之子不再随机，填空就随机，就像下面这样
@@ -7,13 +5,15 @@ var pick_gender = "any"
 //  cue = "hh"
 var cue = ""
 
-// 下面是学生列表，英文逗号隔开，英文引号包裹
+// 下面是学生列表，英文逗号隔开，英文引号包裹，可以逗号后面可以换行方便阅读
 var students = {
     boy: [
-        'hh','genki','suda','你猜'
+        'hh','genki',
+        'suda','你猜'
     ],
     girl: [
-        'gyz','black','蔡徐坤'
+        'gyz','black',
+        '蔡徐坤'
     ]
 }
 

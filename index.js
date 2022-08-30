@@ -21,10 +21,23 @@ function pick_student() {
     return picked_student
 }
 
-document.getElementById("pick").onclick = function () {
+function show_name() {
     console.log(students)
-    name = pick_student()
-    document.getElementById("picked_students").innerText=`${name}`
+    let name = pick_student()
+    document.getElementById("picked_students").innerText = `${name}`
+}
+
+document.getElementById("pick").onclick = function () {
+    pick_gender = "any"
+    show_name()
+}
+document.getElementById("pick_girl").onclick = function () {
+    pick_gender = "girl"
+    show_name()
+}
+document.getElementById("pick_boy").onclick = function () {
+    pick_gender = "boy"
+    show_name()
 }
 
 document.getElementById("refresh").onclick = function () {
